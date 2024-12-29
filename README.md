@@ -1,7 +1,7 @@
 # Search Query Flow Documentation
 
 ## System Architecture Overview
-[](/diagrams/complete.png)
+![](/diagrams/complete.png)
 
 ## Component Details
 
