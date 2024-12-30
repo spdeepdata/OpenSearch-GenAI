@@ -1,7 +1,7 @@
 # Search Query Flow Documentation
 
 ## Platform Architecture Overview
-![](/diagrams/platform-overview.png)
+![](/diagrams/Platform-overview.png)
 
 ## System Architecture Overview
 ![](/diagrams/complete.png)
