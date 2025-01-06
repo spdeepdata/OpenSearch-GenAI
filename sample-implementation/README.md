@@ -2,7 +2,7 @@
 
 ## Overview
 
-A scalable inventory search system built on OpenSearch with advanced semantic capabilities and natural language processing. The system is designed to handle complex product queries, technical specifications, and dynamic filtering requirements commonly found in e-commerce and inventory management systems.
+An inventory search system built on OpenSearch with advanced semantic capabilities and natural language processing. The system is designed to handle complex product queries, technical specifications, and dynamic filtering requirements commonly found in e-commerce and inventory management systems.
 
 ## Architecture
 
