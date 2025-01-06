@@ -1,7 +1,11 @@
 # Search Query Flow Documentation
 
-## System Architecture Overview
-![](/diagrams/complete.png)
+## Data platform Reference Architecture Overview
+![](/diagrams/Platform-OpenSearch.png)
+
+## Search Data Pipeline Architecture Overview
+![](/diagrams/DataPipeline-Architecture.png)
+
 
 ## Component Details
 
@@ -287,3 +291,6 @@ sequenceDiagram
    - Format combined results
    - Include relevance explanations
    - Cache final response
+  
+## System Architecture Overview
+![](/diagrams/complete.png)
