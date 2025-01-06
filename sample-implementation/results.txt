@@ -1,0 +1,87 @@
+derik@local:~/Desktop/AI_SEARCH_TEST$ python3 sample_semantic.py
+Initializing search system...
+Successfully connected to OpenSearch
+Created index: inventory
+
+Indexing sample data...
+Successfully indexed item LAP001
+Successfully indexed item PHN001
+Successfully indexed item LAP002
+
+Running test queries...
+
+Testing query: ThinkPad laptop
+Standard search:
+Found 2 results:
+- ThinkPad X1 Carbon (Score: 4.5841274)
+  Matches: {'name': ['<em>ThinkPad</em> X1 Carbon'], 'description': ['14-inch business <em>laptop</em> with Intel Core i7, 16GB RAM, 512GB SSD'], 'tokens': ['<em>thinkpad</em> x1 carbon 14 inch business <em>laptop</em> intel core i7 16 gb ram 512 gb ssd']}
+- MacBook Pro 16 (Score: 1.2945694)
+  Matches: {'description': ['16-inch <em>laptop</em> with M1 Pro chip, 32GB RAM, 1TB SSD'], 'tokens': ['macbook pro 16 16 inch <em>laptop</em> m1 pro chip 32 gb ram 1 tb ssd']}
+
+Semantic search:
+Found 2 results:
+- ThinkPad X1 Carbon (Score: 5.893878)
+  Matches: {'name': ['<em>ThinkPad</em> X1 Carbon'], 'description': ['14-inch business <em>laptop</em> with Intel Core i7, 16GB RAM, 512GB SSD'], 'tokens': ['<em>thinkpad</em> x1 carbon 14 inch business <em>laptop</em> intel core i7 16 gb ram 512 gb ssd']}
+- MacBook Pro 16 (Score: 1.5822515)
+  Matches: {'description': ['16-inch <em>laptop</em> with M1 Pro chip, 32GB RAM, 1TB SSD'], 'tokens': ['macbook pro 16 16 inch <em>laptop</em> m1 pro chip 32 gb ram 1 tb ssd']}
+
+Testing query: Apple high performance computer
+Standard search:
+Found 2 results:
+- iPhone 13 Pro (Score: 1.3862942)
+  Matches: {}
+- MacBook Pro 16 (Score: 0.5753642)
+  Matches: {}
+
+Semantic search:
+Found 2 results:
+- iPhone 13 Pro (Score: 1.3862942)
+  Matches: {}
+- MacBook Pro 16 (Score: 0.5753642)
+  Matches: {}
+
+Testing query: business laptop with good processor
+Standard search:
+Found 2 results:
+- ThinkPad X1 Carbon (Score: 5.8461056)
+  Matches: {'description': ['14-inch <em>business</em> <em>laptop</em> with Intel Core i7, 16GB RAM, 512GB SSD'], 'tokens': ['thinkpad x1 carbon 14 inch <em>business</em> <em>laptop</em> intel core i7 16 gb ram 512 gb ssd']}
+- MacBook Pro 16 (Score: 1.2945694)
+  Matches: {'description': ['16-inch <em>laptop</em> with M1 Pro chip, 32GB RAM, 1TB SSD'], 'tokens': ['macbook pro 16 16 inch <em>laptop</em> m1 pro chip 32 gb ram 1 tb ssd']}
+
+Semantic search:
+Found 2 results:
+- ThinkPad X1 Carbon (Score: 7.155856)
+  Matches: {'description': ['14-inch <em>business</em> <em>laptop</em> with Intel Core i7, 16GB RAM, 512GB SSD'], 'tokens': ['thinkpad x1 carbon 14 inch <em>business</em> <em>laptop</em> intel core i7 16 gb ram 512 gb ssd']}
+- MacBook Pro 16 (Score: 1.5822515)
+  Matches: {'description': ['16-inch <em>laptop</em> with M1 Pro chip, 32GB RAM, 1TB SSD'], 'tokens': ['macbook pro 16 16 inch <em>laptop</em> m1 pro chip 32 gb ram 1 tb ssd']}
+
+Testing query: smartphone with large storage
+Standard search:
+Found 1 results:
+- iPhone 13 Pro (Score: 6.6870923)
+  Matches: {'description': ['5G <em>smartphone</em> with A15 Bionic chip, 256GB <em>storage</em>'], 'tokens': ['iphone 13 pro 5 g <em>smartphone</em> a15 bionic chip 256 gb <em>storage</em>']}
+
+Semantic search:
+Found 1 results:
+- iPhone 13 Pro (Score: 8.159432)
+  Matches: {'description': ['5G <em>smartphone</em> with A15 Bionic chip, 256GB <em>storage</em>'], 'tokens': ['iphone 13 pro 5 g <em>smartphone</em> a15 bionic chip 256 gb <em>storage</em>']}
+
+Testing query: laptop with 16GB RAM
+Standard search:
+Found 3 results:
+- ThinkPad X1 Carbon (Score: 9.847531)
+  Matches: {'description': ['14-inch business <em>laptop</em> with Intel Core i7, <em>16</em><em>GB</em> <em>RAM</em>, 512<em>GB</em> SSD'], 'tokens': ['thinkpad x1 carbon 14 inch business <em>laptop</em> intel core i7 <em>16</em> <em>gb</em> <em>ram</em> 512 <em>gb</em> ssd']}
+- MacBook Pro 16 (Score: 5.232218)
+  Matches: {'name': ['MacBook Pro <em>16</em>'], 'description': ['<em>16</em>-inch <em>laptop</em> with M1 Pro chip, 32<em>GB</em> <em>RAM</em>, 1TB SSD'], 'tokens': ['macbook pro <em>16</em> <em>16</em> inch <em>laptop</em> m1 pro chip 32 <em>gb</em> <em>ram</em> 1 tb ssd']}
+- iPhone 13 Pro (Score: 0.8794677)
+  Matches: {'description': ['5G smartphone with A15 Bionic chip, 256<em>GB</em> storage'], 'tokens': ['iphone 13 pro 5 g smartphone a15 bionic chip 256 <em>gb</em> storage']}
+
+Semantic search:
+Found 3 results:
+- ThinkPad X1 Carbon (Score: 12.053166)
+  Matches: {'description': ['14-inch business <em>laptop</em> with Intel Core i7, <em>16</em><em>GB</em> <em>RAM</em>, 512<em>GB</em> SSD'], 'tokens': ['thinkpad x1 carbon 14 inch business <em>laptop</em> intel core i7 <em>16</em> <em>gb</em> <em>ram</em> 512 <em>gb</em> ssd']}
+- MacBook Pro 16 (Score: 6.490827)
+  Matches: {'name': ['MacBook Pro <em>16</em>'], 'description': ['<em>16</em>-inch <em>laptop</em> with M1 Pro chip, 32<em>GB</em> <em>RAM</em>, 1TB SSD'], 'tokens': ['macbook pro <em>16</em> <em>16</em> inch <em>laptop</em> m1 pro chip 32 <em>gb</em> <em>ram</em> 1 tb ssd']}
+- iPhone 13 Pro (Score: 1.0731058)
+  Matches: {'description': ['5G smartphone with A15 Bionic chip, 256<em>GB</em> storage'], 'tokens': ['iphone 13 pro 5 g smartphone a15 bionic chip 256 <em>gb</em> storage']}
+derik@local:~/Desktop/AI_SEARCH_TEST$
