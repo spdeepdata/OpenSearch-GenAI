@@ -16,6 +16,7 @@ A scalable, multi-tenant search system for industrial equipment with marketplace
 
 The system is built on a modern cloud-native architecture supporting multiple tenants with isolated data access and shared marketplace capabilities.
 
+```mermaid
 graph TD
     subgraph Client Layer
         WA[Web Application]
@@ -86,7 +87,7 @@ graph TD
     ECS --> CW
     ECS --> XRay
     CW --> SNS
-
+```
 ### Core Components
 - **Search Engine**: OpenSearch/Elasticsearch cluster
 - **Data Processing**: Python-based NLP pipeline

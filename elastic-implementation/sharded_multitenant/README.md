@@ -1,3 +1,5 @@
+
+```mermaid
 graph TD
     subgraph Code Organization
         SL[sharded_loader.py]
@@ -41,3 +43,4 @@ graph TD
     S3 --> MS
     S4 --> MS
     S5 --> MS
+```
