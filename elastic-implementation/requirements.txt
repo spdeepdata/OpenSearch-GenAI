@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+elasticsearch
+redis
+python-jose[cryptography]
+spacy
+sentence-transformers
+python-multipart
+pydantic
+python-dotenv
