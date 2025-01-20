@@ -1,3 +1,4 @@
+```mermaid
 graph TD
     subgraph Code Organization
         ML[multitenant_loader.py]
@@ -28,3 +29,4 @@ graph TD
     T2 --> SR
     MP --> MS
     SR --> MS
+```
